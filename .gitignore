@@ -100,8 +100,11 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-promts/
+promts/*
+!promts/.gitkeep
+
 files_to_extract/*
+!files_to_extract/.gitkeep
 
 # Legacy files to ignore
 
@@ -117,5 +120,3 @@ mdAnalyzerEng.ts
 index.php
 tradeServer.php
 swagger.yaml 
-
-promts/
