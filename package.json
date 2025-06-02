@@ -1,0 +1,46 @@
+{
+  "name": "context-extractor",
+  "version": "1.0.0",
+  "description": "TypeScript-based context extraction tools for code analysis and LLM processing",
+  "main": "dist/context-extractor.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/context-extractor.js",
+    "start:llm": "node dist/llmContentExtractor.js",
+    "dev": "ts-node context-extractor.ts",
+    "dev:llm": "ts-node llmContentExtractor.ts",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2",
+    "axios": "^1.8.4",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/yargs": "^17.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "rimraf": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "typescript",
+    "context-extraction",
+    "code-analysis",
+    "markdown",
+    "llm",
+    "openai",
+    "documentation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/context-extractor.git"
+  },
+  "license": "MIT",
+  "author": "Your Name"
+}
