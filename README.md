@@ -35,13 +35,7 @@ When working with complex projects that span multiple files and directories, it 
 
 2. **Install dependencies** (for advanced version):
 ```bash
-npm install axios yargs dotenv
-```
-
-3. **Set up environment** (for LLM filtering):
-```bash
-# Create .env file
-echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
+npm install
 ```
 
 ## 🛠️ Usage
@@ -60,6 +54,13 @@ node contentExtractor.js
 - Modify `EXCLUDE_PATTERNS` array to customize file exclusions
 
 ### Advanced Version (llmContentExtractor.js)
+
+
+**Set up environment** (for LLM filtering):
+```bash
+# Create .env file
+echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
+```
 
 The advanced version offers command-line options and AI-powered filtering:
 
